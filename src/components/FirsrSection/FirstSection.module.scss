@@ -1,0 +1,182 @@
+.firstSection {
+  display: flex;
+  padding: 0 150px 180px;
+  background-color: transparent;
+  background-image: url("../../images/volnafon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  align-items: center;
+  justify-content: space-between;
+  animation: move 5s ease-in-out infinite;
+
+  @keyframes move {
+    0% {
+      background-size: 100%;
+    }
+    50% {
+      background-size: 103%;
+    }
+    100% {
+      background-size: 100%;
+    }
+  }
+  > div > h1 {
+    width: 360px;
+    height: 268px;
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 100%;
+    color: #000000;
+    margin: 0;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 160px;
+    > li {
+      margin: 0 auto;
+      margin-bottom: 32px;
+      > a {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #590d56;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        text-decoration-line: underline;
+        > img {
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+  > div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    > div:first-child {
+      position: relative;
+      width: 100%;
+      > img:first-child {
+        position: absolute;
+        z-index: 1;
+        right: 255px;
+        top: 84px;
+      }
+      > img:nth-child(2) {
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        top: 61px;
+      }
+      > img:last-child {
+        position: absolute;
+        z-index: 2;
+        right: 70px;
+        top: 150px;
+      }
+    }
+    > div:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 510px;
+      // > img {
+      //   margin-right: 30px;
+      //   &:nth-child(2) {
+      //     transform: rotate(180deg);
+      //   }
+      // }
+      >button{
+        margin-right: 30px;
+        background-image: url(../../images/strelka.svg);
+        width: 68px;
+        height: 68px;
+        border: none;
+        background-color: transparent;
+        &:nth-child(2) {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    > button {
+      width: 263px;
+      height: 67px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      border-radius: 33.5px;
+      box-sizing: border-box;
+      color: #fff;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      margin-top: 31px;
+      &:hover {
+        opacity: 30%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .firstSection {
+    > div:last-child {
+      > div:first-child {
+        > img:first-child {
+          opacity: 0;
+        }
+
+        > img:last-child {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .firstSection {
+    padding: 0 50px 100px;
+
+    > div > h1 {
+      width: 292px;
+      height: 221px;
+      left: 13px;
+      font-size: 45px;
+      line-height: 90%;
+    }
+    ul {
+      margin-top: 40px;
+    }
+    > div:last-child {
+      > div:nth-child(2) {
+        margin-top: 450px;
+       >button{
+        background-image: url(../../images/strelkafiolet.svg);
+        background-size: cover;
+        &:nth-child(1) {
+          transform: rotate(180deg);
+        }
+        &:nth-child(2) {
+          transform: rotate(0deg);
+        }
+       }
+      }
+      > button {
+        border: 1px solid #5b0e58;
+
+        color: #5b0e58;
+      }
+    }
+  }
+}

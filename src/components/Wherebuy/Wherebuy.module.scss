@@ -1,0 +1,157 @@
+.wherebuy {
+  padding: 0 150px;
+  background-color: transparent;
+  margin-bottom: 30px;
+
+  > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    > div:first-child {
+      width: 20%;
+      margin-right: 30px;
+      > h2 {
+        margin: 0;
+        padding: 0;
+        font-family: "Merriweather";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+        color: #000000;
+        margin-bottom: 40px;
+      }
+      > p {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 154.8%;
+        color: #777777;
+      }
+    }
+    > div:last-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      > div:first-child {
+        position: relative;
+        width: 100%;
+        > img:first-child {
+          position: absolute;
+          z-index: 2;
+          right: 170px;
+          top: 90px;
+        }
+
+        > img:last-child {
+          position: absolute;
+          z-index: 1;
+          right: 100px;
+          top: 0px;
+        }
+      }
+      > div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 510px;
+        > img {
+          margin-right: 30px;
+          &:nth-child(2) {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      button {
+        width: 263px;
+        height: 67px;
+        background-color: transparent;
+        border: 1px solid #47093e;
+        border-radius: 33.5px;
+        box-sizing: border-box;
+        color: #47093e;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        margin-right: 30px;
+        &:hover {
+          color: #fff;
+          background-color: #47093e;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wherebuy {
+    > div {
+      > div:last-child {
+        button {
+          width: 218px;
+          height: 50px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .wherebuy {
+    padding: 0 50px;
+    margin-bottom: 30px;
+  
+    > div {
+      
+  
+      > div:first-child {
+        margin-right: 30px;
+        > h2 {
+          
+          font-size: 24px;
+          
+          margin-bottom: 20px;
+        }
+       
+      }
+      > div:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        > div:first-child {
+          position: relative;
+          width: 100%;
+          > img:first-child {
+            position: absolute;
+            z-index: 2;
+            left: -200px;
+            // right: 170px;
+            top: 90px;
+          }
+  
+        }
+        > div:nth-child(2) {
+          margin-top: 460px;
+          
+        }
+        button {
+          width: 153px;
+          height: 57px;
+          
+          margin-right: 30px;
+          
+        }
+      }
+    }
+  }
+}

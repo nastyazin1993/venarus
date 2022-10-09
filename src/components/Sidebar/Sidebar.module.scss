@@ -1,0 +1,39 @@
+.sidebar {
+  width: 100%;
+  background-image: url(../../images/fonsidebar.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    animation: opacity 0.4s;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 150px;
+
+    li {
+      margin-bottom: 55px;
+      
+
+      a {
+        padding: 0;
+        display: block;
+        text-decoration: none;
+        border-left: 2px solid transparent;
+		color: #000000;
+		font-family: "Merriweather";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 100%;
+
+        &:hover,
+        &.active {
+          color: #771373;
+        }
+      }
+    }
+  }
+}

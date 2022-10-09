@@ -1,0 +1,101 @@
+.footer {
+  > div:first-child {
+    height: 60px;
+    background: linear-gradient(
+      360deg,
+      rgba(71, 9, 62, 0.5) -7.14%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-blend-mode: multiply;
+  }
+  > div:last-child {
+    display: flex;
+    padding: 0 150px 0px;
+    flex-direction: column;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 31px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      color: #540c50;
+      opacity: 0.8;
+      margin: 30px auto 50px;
+    }
+    > div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 35px;
+      > a {
+        text-decoration: none;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 100%;
+        color: #7a7a7a;
+      }
+      > ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        li {
+          margin-right: 30px;
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    > div:last-child {
+      align-self: flex-end;
+      justify-content: end;
+      > p {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        color: #828282;
+        margin-right: 70px;
+        width: 330px;
+      }
+      > div {
+        display: flex;
+        width: 330px;
+        align-items: center;
+        justify-items: center;
+        > p {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #828282;
+        }
+        > img {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    > div:last-child {
+      padding: 0 50px 0px;
+    }
+  }
+}
